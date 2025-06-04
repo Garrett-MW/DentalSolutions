@@ -1,0 +1,326 @@
+/* 
+    Created on : Oct 23, 2024, 12:58:04 PM
+    Author     : garrett
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
+
+/**** SET FONT OF ALL ELEMENTS ****/
+*{
+    font-family: "Oswald", sans-serif;
+}
+
+/******** START INDEX.HTML *********/
+body{
+    background-image: url(dentist.jpeg);
+    background-size: cover;
+}
+
+#indexHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+#tooth:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+nav{
+    text-align: center;
+    width: 70%;
+    min-width: 635px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding-left: 7%;
+
+}
+
+nav li:hover{
+    color: rgb(77, 155, 186);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:active{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    transform: translateY(5px);
+    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+#indexContentContainer{
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#indexCoName{
+    font-size: 40px;
+}
+
+span{
+    color: rgb(77, 155, 186);
+}
+
+#indexP{
+    font-size: 10px;
+}
+
+#indexButton{
+    width: 20%;
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgb(77, 155, 186);
+    box-shadow: 5px 5px 10px grey;
+    color: white;
+    white-space: nowrap;
+}
+
+#indexButton:hover{
+    background-color: rgb(119, 198, 230);
+    transform: translateY(5px);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+footer{
+    text-align: center;
+    font-size: 10px;
+    background-color: rgb(77, 155, 186);
+    color: white;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    margin-top: 20px;
+}
+/****** END INDEX.HTML *********/
+
+
+/******** START SIGNIN.HTML *********/
+#signInContentContainer{
+    text-align: center;
+    padding: 2%;
+    margin-top: 0vh;
+}
+
+form{
+    border-radius: 12px;
+    padding: 3%;
+    margin: auto;
+    box-shadow: 5px 5px 15px grey;
+}
+
+.input{
+    width: 40%;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 0.5%;
+}
+
+.input:focus{
+    border: 3px solid rgb(77, 155, 186);
+}
+
+
+/****** END SIGNIN.HTML ************/
+
+/****** START CREATEACCOUNT.HTML ********/
+#createAccountContentContainer{
+    text-align: center; 
+    padding: 2%;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.createAccountInput{
+    height: 20px;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.createAccountInput:focus{
+    border: 3px solid rgb(77, 155, 186);
+}
+
+
+/****** END CREATEACCOUNT.HTML ********/
+
+/*****START CONTACTUS.HTML********/
+#contactUsContentContainer{
+    text-align: center;
+    box-shadow: 5px 5px 15px grey;
+    border-radius: 12px;
+    padding: 2%;
+}
+ #contactGridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(178, 219, 235);
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px grey;
+ }
+/*******END CONTACTUS.HTML***********/
+
+/*********START LOGINERROR.JSP**********/
+#LoginErrorContentContainer{
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px grey;
+    margin: auto;
+    width: 60%;
+    padding: 5%;
+}
+
+
+/*********END LOGINERROR.JSP**********/
+
+
+/*********START PATIENTSCHEDULE.JSP**********/
+#tableContentContainer{
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px grey;
+    text-align: center;
+    padding: 2%;
+}
+
+table{
+    margin: auto;
+    border-collapse: seperate;
+    border-spacing: 0;
+    border-radius: 12px;
+    width: 80%;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px grey;
+}
+
+th, td {
+    border-left: solid black 1px;
+    border-top: solid black 1px;
+}
+            
+th{
+    font-weight: bold;
+    height: 50px;
+    border-top: none;
+}
+            
+td{
+    height: 40px;
+}
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+           
+
+tr{
+    background-color: rgb(119, 198, 230); 
+}
+
+tr:hover{
+    background-color: rgb(178, 219, 235);
+    transition: background-color 0.3s ease;
+}
+            
+caption{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 1%;
+                
+}
+/*********END PATIENTSCHEDULE.JSP**********/
+
+/****START UPDATEACCOUNT.JSP******/
+
+#updateAcctContentContainer{
+    text-align: center;
+}
+
+.updateAcct{
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.updateAcct:focus{
+    border: 3px solid rgb(77, 155, 186);
+}
+
+#updateAcctgridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 2%;
+}
+
+/****END UPDATEACCOUNT.JSP*****/
+
+
+/*** Start patientScheduleAppointment.jsp ****/
+#scheduleApptContent{
+    text-align: center;
+}
+
+#scheduleApptForm{
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+}
+
+.inputFields input{
+    width: 50%;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.inputFields input:focus{
+    border: 2px solid rgb(77, 155, 186);
+}
+
+/***** End patientScheduleAppointment.jsp ******/
+
+#deleteApptForm{
+    margin: auto;
+}
+
+hr{
+ background-color: black;
+ border-color: black;
+}

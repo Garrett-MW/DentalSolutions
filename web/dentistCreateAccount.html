@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dental Solutions | Create Dentist Account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header id="indexHeader">
+        <a href="index.html"><img id="tooth" width="40" height="40" src="https://img.icons8.com/isometric/50/tooth.png"
+                alt="tooth" /></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="signIn.html">Sign In</a></li>
+                <li><a href="dentistLogin.html">Employee</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="createAccountContentContainer">
+        <form action="dentistCreateAccountServlet" method="post" id="createAccountForm" >
+            <h1>Create <span>Account</span></h1>
+            <div id="gridContainer">
+                <h4 class="createAccountLabel">First Name:</h4>
+                <input type="text" name="firstName"  class="createAccountInput" required>
+                <h4 class="createAccountLabel">Last Name:</h4>
+                <input type="text" name="lastName" class="createAccountInput" required>
+                <h4 class="createAccountLabel">Email:</h4>
+                <input type="email" name="email" class="createAccountInput" required>
+                <h4 class="createAccountLabel">Dentist ID:</h4>
+                <input type="text" name="id" class="createAccountInput">
+                <h4 class="createAccountLabel">Password:</h4>
+                <input type="text" name="passwd" class="createAccountInput" required>
+                <h4 class="createAccountLabel">Office:</h4>
+                <input type="text" name="office" class="createAccountInput" required>
+              </div>
+            <input type="submit" id="indexButton" value="Create"/>
+        </form>
+    </div>
+    <footer id="footer">Dental Solutions: EST.2024</footer>
+    </body>
+</html>
